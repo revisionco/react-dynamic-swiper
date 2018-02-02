@@ -1,22 +1,22 @@
 {
   "name": "react-dynamic-swiper",
   "version": "1.1.2",
-  "description": "React wrapper for IDangerous Swiper that auto-magically updates slides, and reinitializes.",
+  "description":
+    "React wrapper for IDangerous Swiper that auto-magically updates slides, and reinitializes.",
   "main": "lib",
   "scripts": {
-    "test": "npm run lint && ./node_modules/.bin/_mocha test/.setup.js test/**/*.test.js",
-    "build-lib": "./node_modules/.bin/babel src --out-dir lib && cp src/styles.css lib",
-    "build-docs": "npm run build-lib && rm -rf docs && mkdir docs && cd demo && npm install && npm run build && mv build/* ../docs && rm -rf build",
+    "test":
+      "npm run lint && ./node_modules/.bin/_mocha test/.setup.js test/**/*.test.js",
+    "build-lib":
+      "./node_modules/.bin/babel src --out-dir lib && cp src/styles.css lib",
+    "build-docs":
+      "npm run build-lib && rm -rf docs && mkdir docs && cd demo && npm install && npm run build && mv build/* ../docs && rm -rf build",
     "prepublish": "npm run build-lib",
     "copy-styles": "node scripts/copy-swiper-styles.js",
     "lint": "standard",
     "lint-fix": "standard --fix"
   },
-  "keywords": [
-    "swiper",
-    "react swiper",
-    "idangerous swiper"
-  ],
+  "keywords": ["swiper", "react swiper", "idangerous swiper"],
   "author": "Nick Pisacane <pisacanen@gmail.com>",
   "repository": {
     "type": "git",
@@ -47,16 +47,10 @@
     "deep-equal": "^1.0.1",
     "lodash.omit": "^4.5.0",
     "prop-types": "^15.5.10",
-    "swiper": "^3.4.2"
+    "swiper": "^4.1.0"
   },
   "standard": {
     "parser": "babel-eslint",
-    "ignore": [
-      "test",
-      "docs",
-      "demo",
-      "scripts",
-      "lib"
-    ]
+    "ignore": ["test", "docs", "demo", "scripts", "lib"]
   }
 }
